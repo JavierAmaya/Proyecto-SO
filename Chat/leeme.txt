@@ -1,0 +1,20 @@
+﻿***Instrucciones para Utilizar este proyecto****
+
+
+La Carpeta chat contiene 5 clases Java
+
+Descripción de cada clase:
+
+
+*Class Cliente:
+	Esta clase esta diseñada para crearse un cliente el cual reserva un socket personal donde estará recibiendo los datos y un socket desde el que va estar escuchando que seria del server.
+
+
+*Class MainCliente: Esta clase es la encargada de correr los servicios del lado del cliente
+                    Se encarga de instanciar una clase de tipo cliente, preparando a si el proceso de intercambio.
+*Class MainServidor: Esta clase se encarga de la misma forma que la clase MainCliente, solo que del lado del servidor. Instansea a la clase servidor.
+*Class Conexion : Se definen los puestos de coneccion y el "local host", como tambien el socket y tipos de parametros de salida.
+                  Lo siguiente es instansear las clases padre socket y serverSocket. Con la clase socket se envian dos parametros, que es host y puerto.
+  
+*Class Servidor: En esta clase se hace uso de la herencia desde la clase Conexion, para hacer uso de los atributos sockets y demas.
+		 Ademas se implementan los try y cath para las exepciones que se puedan generar.	 
